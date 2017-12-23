@@ -1,23 +1,3 @@
-/*
-class Events {  // built-in event pool itself
-    static on(eventName,callback) {
-        if(!this.eventName) this.eventName = [];
-        this.eventName.push(callback);
-    }
-    static trigger(eventName,data) {
-        if(!this.eventName) return;
-        else {
-            for(let event of this.eventName)
-                event(data);
-        }
-    }
-    static removeAtIdxCallback(eventName,idx) {  // Remove any callbacks, if value of idx is boolean(true)
-        if(!this.eventName) throw new Error('Do not exsist event name you indicated');
-        else if(idx === true) this.eventName.length = 0;
-        else this.eventName.splice(idx,1);
-    }
-}
-*/
 
 
 const Events = ( () => {
